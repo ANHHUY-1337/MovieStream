@@ -1,8 +1,10 @@
 package com.example.MovieWeb.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -10,9 +12,11 @@ import java.util.Date;
 @Data
 @Builder
 @Table(name="Movie")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Movie {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int ID_Movie;
     private int _View;
     private int Movie_Duration;

@@ -13,7 +13,7 @@ import java.util.Date;
 @Builder
 public class Movie {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID_Movie", nullable = false)
     private Integer idMovie;
 
@@ -39,8 +39,8 @@ public class Movie {
     @Column(name = "Price_cheche", nullable = false)
     private Double price;
 
-    // @Column(name = "Trailer", nullable = false)
-    // private String trailer;
+     @Column(name = "Trailer", nullable = false)
+     private String trailer;
     
     // day là code của anh nè
     // cái này nó sẽ được thông báo nhé
