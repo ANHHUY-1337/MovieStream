@@ -11,9 +11,15 @@ public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
 
-    public MovieDTO createMovie(MovieDTO movie){
+    public Movie createMovie(MovieDTO movie){
 
-        return movieRepository.save(movie);
+        Movie movie_m = new Movie();
+        movie_m.builder()
+            .description(movie.getDescription())
+            .image(movie.getImage())
+            .build();
+        
+        return movieRepository.save(movie_m);
     }
 
 }
