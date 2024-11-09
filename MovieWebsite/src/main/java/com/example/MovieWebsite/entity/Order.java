@@ -33,5 +33,6 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "ID_User", nullable = false)
     private User user;
+    // them dong order
 }
 

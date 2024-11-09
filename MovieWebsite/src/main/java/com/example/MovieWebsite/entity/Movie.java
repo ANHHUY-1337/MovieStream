@@ -36,11 +36,11 @@ public class Movie {
     @Temporal(TemporalType.DATE)
     private Date releaseDate;
 
-    @Column(name = "Price", nullable = false)
+    @Column(name = "Price_cheche", nullable = false)
     private Double price;
 
-    @Column(name = "Trailer", nullable = false)
-    private String trailer;
+    // @Column(name = "Trailer", nullable = false)
+    // private String trailer;
     
     // day là code của anh nè
     // cái này nó sẽ được thông báo nhé
