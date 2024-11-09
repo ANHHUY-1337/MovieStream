@@ -41,5 +41,8 @@ public class Movie {
 
     @Column(name = "Trailer", nullable = false)
     private String trailer;
+    
+    // day là code của anh nè
+    // cái này nó sẽ được thông báo nhé
 }
 
