@@ -15,7 +15,7 @@ public class AnimalManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Select an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -23,7 +23,7 @@ public class AnimalManagementSystem {
                     String name = scanner.nextLine();
                     System.out.print("Enter animal age: ");
                     int age = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter species (Dog, Cat, Lion, Elephant, etc.): ");
                     String species = scanner.nextLine();
 

@@ -1,9 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
-// Base class Animal
 
 
-// AnimalManager to manage animals in the system
 class AnimalManager {
     private final List<Animal> animals = new ArrayList<>();
 
