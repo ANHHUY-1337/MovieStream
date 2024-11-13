@@ -11,7 +11,7 @@ import java.util.Date;
 @Builder
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID_Order", nullable = false)
     private Integer idOrder;
 
